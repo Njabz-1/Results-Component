@@ -1,44 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <title>Results Component</title>
-</head>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-<body>
-  <main class="vh-100">
-    <div class="container h-100 d-flex justify-content-center align-items-center">
-      <div class="row">
-        <div class="col-md-6 col-lg-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Overall Result</h5>
-              <p class="card-text">Display overall result here.</p>
-            </div>
-          </div>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css links -->
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <title>Frontend Mentor | Results summary component</title>
+  </head>
+  <body>
+    <main class="card">
+      <section class="card__container--result">
+        <p class="card__text">Your Result</p>
+        <div class="card__group--score">
+          <span class="card__score">76</span>
+          <span class="card__denom">of 100</span>
         </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Summary</h5>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Score 1: 100</li>
-                <li class="list-group-item">Score 2: 100</li>
-                <li class="list-group-item">Score 3: 100</li>
-                <li class="list-group-item">Score 4: 100</li>
-              </ul>
-              <button type="button" class="btn btn-primary mt-3">Continue</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </main>
-</body>
+        <h1 class="card__result">Great</h1>
+        <p class="card__paragraph">
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
+      </section>
 
+      <section class="card__container--summary">
+        <h2 class="card__title">Summary</h2>
+        <div class="card__wrapper card__wrapper--reaction">
+          <h3 class="card__title--reaction">Reaction</h3>
+          <span class="card__item-score"
+            >80 <span class="--gray">/ 100</span></span
+          >
+        </div>
+        <div class="card__wrapper card__wrapper--memory">
+          <h3 class="card__title--memory">Memory</h3>
+          <span class="card__item-score"
+            >92 <span class="--gray">/ 100</span></span
+          >
+        </div>
+        <div class="card__wrapper card__wrapper--verbal">
+          <h3 class="card__title--verbal">Verbal</h3>
+          <span class="card__item-score"
+            >61 <span class="--gray">/ 100</span></span
+          >
+        </div>
+        <div class="card__wrapper card__wrapper--visual">
+          <h3 class="card__title--visual">Visual</h3>
+          <span class="card__item-score"
+            >72 <span class="--gray">/ 100</span></span
+          >
+        </div>
+        <a href="" class="card__button">Continue</a>
+      </section>
+    </main>
+  </body>
 </html>
