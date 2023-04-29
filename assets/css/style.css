@@ -148,7 +148,7 @@ body {
   color: hsl(0, 100%, 67%);
 }
 .card__title--reaction::before {
-  content: url(../assets/images/icon-reaction.svg);
+  content: url(./assets/images/icon-reaction.svg);
 }
 .card__title--memory {
   display: flex;
@@ -157,7 +157,7 @@ body {
   color: hsl(39, 100%, 56%);
 }
 .card__title--memory::before {
-  content: url(../assets/images/icon-memory.svg);
+  content: url(/assets/images/icon-memory.svg);
 }
 .card__title--verbal {
   display: flex;
